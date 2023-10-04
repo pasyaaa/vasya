@@ -1,0 +1,78 @@
+1. filter():
+ Metode ini digunakan untuk membuat array baru dengan semua elemen yang lulus uji kondisi tertentu.
+Contoh Kode :
+const numbers = [1, 2, 3, 4, 5];
+const evenNumbers = numbers.filter(number => number % 2 === 0);
+console.log(evenNumbers); 
+// Output: [2, 4]
+
+2. some(): Metode ini digunakan untuk memeriksa apakah ada setidaknya satu elemen dalam array yang memenuhi kondisi tertentu.
+Contoh Kode:
+const scores = [80, 90, 70, 60];
+const hasPassed = scores.some(score => score >= 70);
+console.log(hasPassed); 
+// Output: true
+
+3. reduce():
+ Metode ini digunakan untuk mengurangi elemen dalam array menjadi satu nilai dengan menerapkan suatu fungsi akumulator.
+Contoh Kode:
+const numbers = [1, 2, 3, 4, 5];
+const sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+console.log(sum);
+ // Output: 15
+
+4. every():
+ Metode ini digunakan untuk memeriksa apakah semua elemen dalam array memenuhi kondisi tertentu.
+Contoh Kode:
+const ages = [18, 20, 22, 24];
+const isAdult = ages.every(age => age >= 18);
+console.log(isAdult);
+ // Output: true
+
+5. slice(): Metode ini digunakan untuk mengambil sebagian elemen dari array dan membuat array baru.
+Contoh Kode:
+const colors = ["red", "blue", "green", "yellow"];
+const slicedColors = colors.slice(1, 3);
+console.log(slicedColors); 
+// Output: ["blue", "green"]
+
+6. find(): Metode ini digunakan untuk mencari elemen pertama dalam array yang memenuhi kondisi tertentu.
+Contoh Kode:
+const fruits = ["apple", "banana", "cherry", "date"];
+const result = fruits.find(fruit => fruit === "cherry");
+console.log(result); 
+// Output: "cherry"
+
+7. concat(): 
+Metode ini digunakan untuk menggabungkan dua atau lebih array dan membuat array baru.
+Contoh Kode:
+const array1 = [1, 2];
+const array2 = [3, 4];
+const combinedArray = array1.concat(array2);
+console.log(combinedArray);
+ // Output: [1, 2, 3, 4]
+
+8. ush():
+ Metode ini digunakan untuk menambahkan satu atau lebih elemen ke akhir array.
+Contoh Kode:
+javascript
+Copy code
+const numbers = [1, 2, 3];
+numbers.push(4, 5);
+console.log(numbers); // Output: [1, 2, 3, 4, 5]
+
+9. pop():
+ Metode ini digunakan untuk menghapus elemen terakhir dari array dan mengembalikan elemen tersebut.
+Contoh Kode:
+const numbers = [1, 2, 3, 4, 5];
+const lastNumber = numbers.pop();
+console.log(lastNumber); // Output: 5
+console.log(numbers); // Output: [1, 2, 3, 4]
+
+10. sort():
+ Metode ini digunakan untuk mengurutkan elemen dalam array.
+Contoh Kode:
+const fruits = ["banana", "apple", "cherry", "date"];
+fruits.sort();
+console.log(fruits); 
+// Output: ["apple", "banana", "cherry", "date"]
